@@ -5,4 +5,4 @@ RUN yum -y --setopt=tsflags=nodocs update && \
     yum clean all
 
 # Simple startup script to avoid some issues observed with container restart
-CMD ["/usr/bin/sleep infinity"]
+CMD ["/bin/bash /usr/bin/sleep infinity"]
