@@ -1,4 +1,4 @@
-FROM base-centos7:latest
+FROM docker.io/openshift/base-centos7:latest
 MAINTAINER Sasha Segal <wester.55@gmail.com>
 RUN yum -y --setopt=tsflags=nodocs update && \
     yum -y --setopt=tsflags=nodocs install httpd net-tools && \
