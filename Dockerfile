@@ -1,8 +1,8 @@
-FROM fedora
+FROM base-centos7
 MAINTAINER Sasha Segal <wester.55@gmail.com>
-RUN dnf -y --setopt=tsflags=nodocs update && \
-    dnf -y --setopt=tsflags=nodocs install httpd net-tools && \
-    dnf clean all
+RUN yum -y --setopt=tsflags=nodocs update && \
+    yum -y --setopt=tsflags=nodocs install httpd net-tools && \
+    yum clean all
 
 EXPOSE 80
 
